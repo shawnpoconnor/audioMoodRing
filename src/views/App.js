@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Dropzone from 'react-dropzone';
 import {analyzeFile} from '../audioAnalysis/audioAnalysisGateway';
 import logo from './logo.svg';
 import './styles/App.css';
@@ -11,12 +12,17 @@ class App extends Component {
           <img src={logo} className="App-logo" alt="logo" />
           <h2>Welcome to React</h2>
         </div>
-        <button className="App-intro" onClick={analyzeFile}>
-          {"s'go"}
-        </button>
+        <h2>Sound Analysis</h2>
+        <Dropzone onDrop={onDrop}>
+          "s'go"
+        </Dropzone>
       </div>
     );
   }
+}
+
+const onDrop = (file) => {
+  analyzeFile(file);
 }
 
 export default App;
