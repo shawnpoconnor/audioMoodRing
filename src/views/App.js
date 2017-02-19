@@ -1,28 +1,68 @@
 import React, { Component } from 'react';
 import Dropzone from 'react-dropzone';
 import {analyzeFile} from '../audioAnalysis/audioAnalysisGateway';
-import logo from './logo.svg';
 import './styles/App.css';
 
+const MAX_HUE = 360;
+
 class App extends Component {
+  constructor() {
+    super();
+    this.state = {
+      isLoading: false,
+      shouldShowDropzone: true,
+      notes: [],
+    };
+  }
+
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <h2>Sound Analysis</h2>
-        <Dropzone onDrop={onDrop}>
-          "s'go"
-        </Dropzone>
+      <div>
+        <header className="header">
+          <div>Audio Mood Ring</div>
+        </header>
+        <main className="content">
+          {this.state.shouldShowDropzone
+            ? this.renderDropzone.bind(this)()
+            : this.renderNotes.bind(this)()}
+        </main>
       </div>
     );
   }
+
+  renderDropzone() {
+    return <Dropzone onDrop={this.onDrop.bind(this)}>
+      "s'go"
+    </Dropzone>
+  }
+
+  renderNotes() {
+    return <ul>
+      {this.state.notes.map((note, index) =>
+        <li key={index} style={{color: this.getColor(note)}} >
+          {`${note.pitch} ${note.startTime} ${note.volume}`}
+        </li>
+      )}
+    </ul>
+  }
+
+  onDrop(file) {
+    this.setState({
+        isLoading: true,
+        shouldShowDropzone: false
+    });
+
+    analyzeFile(file)
+      .then(notes => console.log(notes.length) || this.setState({
+        isLoading: false,
+        notes
+    }));
+  }
+
+  getColor({pitch, volume}) {
+    return `hsl(${Math.round(pitch * MAX_HUE)}, 100%, 50%)`
+  }
 }
 
-const onDrop = (file) => {
-  analyzeFile(file);
-}
 
 export default App;
