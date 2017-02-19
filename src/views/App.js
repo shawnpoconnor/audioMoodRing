@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Dropzone from 'react-dropzone';
-import {analyzeFile} from '../audioAnalysis/audioAnalysisGateway';
+import {analyzeFile2} from '../audioAnalysis/audioAnalysisGateway';
 import './styles/App.css';
 
 const MAX_HUE = 360;
@@ -12,6 +12,7 @@ class App extends Component {
       isLoading: false,
       shouldShowDropzone: true,
       notes: [],
+      words: ''
     };
   }
 
@@ -25,6 +26,7 @@ class App extends Component {
           {this.state.shouldShowDropzone
             ? this.renderDropzone.bind(this)()
             : this.renderNotes.bind(this)()}
+          {this.state.words}
         </main>
       </div>
     );
@@ -51,12 +53,17 @@ class App extends Component {
         isLoading: true,
         shouldShowDropzone: false
     });
+    analyzeFile2(file, (words) => {
+      this.setState({
+        words
+      });
+    })
 
-    analyzeFile(file)
-      .then(notes => console.log(notes.length) || this.setState({
-        isLoading: false,
-        notes
-    }));
+    // analyzeFile(file)
+    //   .then(notes => console.log(notes.length) || this.setState({
+    //     isLoading: false,
+    //     notes
+    // }));
   }
 
   getColor({pitch, volume}) {
