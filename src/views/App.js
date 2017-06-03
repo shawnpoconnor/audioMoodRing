@@ -1,16 +1,16 @@
-import React, { Component } from 'react';
-import Dropzone from 'react-dropzone';
-import {analyzeFile2} from '../audioAnalysis/audioAnalysisGateway';
-import './styles/App.css';
+import React from 'react';
+import styled from 'styled-components';
 
-const MAX_HUE = 360;
+import Header from './Header';
+import FileUpload from './FileUpload';
+import Transcription from './Transcription';
 
-class App extends Component {
+class App extends React.PureComponent {
   constructor() {
     super();
     this.state = {
       isLoading: false,
-      shouldShowDropzone: true,
+      shouldShowFileUpload: true,
       notes: [],
       words: ''
     };
@@ -18,58 +18,29 @@ class App extends Component {
 
   render() {
     return (
-      <div>
-        <header className="header">
-          <div>Audio Mood Ring</div>
-        </header>
-        <main className="content">
-          {this.state.shouldShowDropzone
-            ? this.renderDropzone.bind(this)()
-            : this.renderNotes.bind(this)()}
-          {this.state.words}
-        </main>
-      </div>
+      <Main>
+        <Header />
+        <FileUpload onDrop={this.onDrop} shouldShowFileUpload={this.state.shouldShowFileUpload} />
+        <Transcription notes={[]} />
+      </Main>
     );
   }
 
-  renderDropzone() {
-    return <Dropzone onDrop={this.onDrop.bind(this)}>
-      "s'go"
-    </Dropzone>
-  }
 
-  renderNotes() {
-    return <ul>
-      {this.state.notes.map((note, index) =>
-        <li key={index} style={{color: this.getColor(note)}} >
-          {`${note.pitch} ${note.startTime} ${note.volume}`}
-        </li>
-      )}
-    </ul>
-  }
-
-  onDrop(file) {
+  onDrop = (file) => {
     this.setState({
         isLoading: true,
-        shouldShowDropzone: false
+        shouldShowFileUpload: false
     });
-    analyzeFile2(file, (words) => {
-      this.setState({
-        words
-      });
-    })
-
+    // testGoogleApi(file);
     // analyzeFile(file)
     //   .then(notes => console.log(notes.length) || this.setState({
     //     isLoading: false,
     //     notes
     // }));
   }
-
-  getColor({pitch, volume}) {
-    return `hsl(${Math.round(pitch * MAX_HUE)}, 100%, 50%)`
-  }
 }
 
+const Main = styled.div``;
 
 export default App;
