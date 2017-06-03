@@ -1,14 +1,26 @@
-const uploadFile = () => ({
-    type: 'words/LOAD',
+import {analyzeFile} from './audioAnalysis/audioAnalysisGateway';
+
+const uploadFile = file => dispatch => {
+  dispatch({
+    type: 'notes/LOAD',
     payload: false,
-    // testGoogleApi(file);
-    // analyzeFile(file)
-    //   .then(notes => console.log(notes.length) || this.setState({
-    //     isLoading: false,
-    //     notes
-    // }));
-});
+  });
+
+  analyzeFile(file)
+  .then(notes =>
+    dispatch({
+      type: 'notes/UPDATE',
+      payload: notes,
+    })
+  )
+  .catch(error =>
+    dispatch({
+      type: 'notes/ERROR',
+      payload: error,
+    })
+  );
+};
 
 export {
-    uploadFile,
+  uploadFile,
 };

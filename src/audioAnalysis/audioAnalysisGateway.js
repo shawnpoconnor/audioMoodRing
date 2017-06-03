@@ -1,15 +1,14 @@
 import request from 'superagent';
-const config = require('../secrets.json');
 
 const URL = 'https://api.sonicAPI.com/analyze/melody';
 const MAX_MIDI = 127;
 
-export const analyzeFile = (file) =>
+export const analyzeFile = file =>
   new Promise((resolve, reject) =>
     request
       .post(URL)
       .field('detailed_result', true)
-      .field('access_id', config.sonicApi)
+      .field('access_id', process.env.REACT_APP_SONIC_API)
       .field('format', 'json')
       .attach('input_file', new File(file, 'input.wav'))
       .end((error, response) =>
