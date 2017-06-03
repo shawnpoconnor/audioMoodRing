@@ -1,46 +1,29 @@
 import React from 'react';
 import styled from 'styled-components';
+import {connect} from 'react-redux';
 
+import {uploadFile} from '../actions';
+import {getShouldShowFileUpload, getAllWords, getAllNotes} from '../selectors';
 import Header from './Header';
 import FileUpload from './FileUpload';
 import Transcription from './Transcription';
 
-class App extends React.PureComponent {
-  constructor() {
-    super();
-    this.state = {
-      isLoading: false,
-      shouldShowFileUpload: true,
-      notes: [],
-      words: ''
-    };
-  }
-
-  render() {
-    return (
-      <Main>
-        <Header />
-        <FileUpload onDrop={this.onDrop} shouldShowFileUpload={this.state.shouldShowFileUpload} />
-        <Transcription notes={[]} />
-      </Main>
-    );
-  }
-
-
-  onDrop = (file) => {
-    this.setState({
-        isLoading: true,
-        shouldShowFileUpload: false
-    });
-    // testGoogleApi(file);
-    // analyzeFile(file)
-    //   .then(notes => console.log(notes.length) || this.setState({
-    //     isLoading: false,
-    //     notes
-    // }));
-  }
-}
+const App = props =>
+  <Main>
+    <Header />
+    <FileUpload onDrop={props.uploadFile} shouldShowFileUpload={props.shouldShowFileUpload} />
+    <Transcription notes={props.notes} />
+  </Main>;
 
 const Main = styled.div``;
 
-export default App;
+export default connect(
+  state => ({
+    shouldShowFileUpload: getShouldShowFileUpload(state),
+    notes: getAllNotes(state),
+    words: getAllWords(state),
+  }),
+  {
+    uploadFile
+  }
+)(App);

@@ -3,8 +3,7 @@ import {composeWithDevTools} from 'redux-devtools-extension';
 import {apiMiddleware} from 'redux-api-middleware';
 import thunk from 'redux-thunk';
 import logger from 'redux-logger';
-
-import reducer from './reducer';
+import reducer from './reducers';
 
 const initialState = {};
 
