@@ -1,544 +1,539 @@
 {
   "words": [
     {
-     "results": [
+      "results": [
         {
-           "word_alternatives": [
-              {
-                 "start_time": 0.03,
-                 "alternatives": [
-                    {
-                       "confidence": 0.9391,
-                       "word": "one"
-                    }
-                 ],
-                 "end_time": 0.24
-              },
-              {
-                 "start_time": 0.24,
-                 "alternatives": [
-                    {
-                       "confidence": 0.9322,
-                       "word": "voice"
-                    }
-                 ],
-                 "end_time": 0.67
-              },
-              {
-                 "start_time": 0.67,
-                 "alternatives": [
-                    {
-                       "confidence": 0.993,
-                       "word": "we"
-                    }
-                 ],
-                 "end_time": 0.92
-              },
-              {
-                 "start_time": 0.92,
-                 "alternatives": [
-                    {
-                       "confidence": 0.9634,
-                       "word": "will"
-                    }
-                 ],
-                 "end_time": 1.25
-              },
-              {
-                 "start_time": 1.25,
-                 "alternatives": [
-                    {
-                       "confidence": 0.9634,
-                       "word": "not"
-                    }
-                 ],
-                 "end_time": 1.54
-              },
-              {
-                 "start_time": 1.54,
-                 "alternatives": [
-                    {
-                       "confidence": 0.9701,
-                       "word": "go"
-                    }
-                 ],
-                 "end_time": 1.75
-              },
-              {
-                 "start_time": 1.75,
-                 "alternatives": [
-                    {
-                       "confidence": 0.9701,
-                       "word": "quietly"
-                    }
-                 ],
-                 "end_time": 2.44
-              },
-              {
-                 "start_time": 2.44,
-                 "alternatives": [
-                    {
-                       "confidence": 1.0,
-                       "word": "into"
-                    }
-                 ],
-                 "end_time": 2.67
-              },
-              {
-                 "start_time": 2.67,
-                 "alternatives": [
-                    {
-                       "confidence": 1.0,
-                       "word": "the"
-                    }
-                 ],
-                 "end_time": 2.79
-              },
-              {
-                 "start_time": 2.79,
-                 "alternatives": [
-                    {
-                       "confidence": 0.9742,
-                       "word": "night"
-                    }
-                 ],
-                 "end_time": 3.29
-              }
-           ],
-           "keywords_result": {},
-           "alternatives": [
-              {
-                 "timestamps": [
-                    [
-                       "one",
-                       0.03,
-                       0.24
-                    ],
-                    [
-                       "voice",
-                       0.24,
-                       0.67
-                    ],
-                    [
-                       "we",
-                       0.67,
-                       0.92
-                    ],
-                    [
-                       "will",
-                       0.92,
-                       1.25
-                    ],
-                    [
-                       "not",
-                       1.25,
-                       1.54
-                    ],
-                    [
-                       "go",
-                       1.54,
-                       1.75
-                    ],
-                    [
-                       "quietly",
-                       1.75,
-                       2.44
-                    ],
-                    [
-                       "into",
-                       2.44,
-                       2.67
-                    ],
-                    [
-                       "the",
-                       2.67,
-                       2.79
-                    ],
-                    [
-                       "night",
-                       2.79,
-                       3.29
-                    ]
-                 ],
-                 "confidence": 0.902,
-                 "transcript": "one voice we will not go quietly into the night "
-              }
-           ],
-           "final": true
+          "word_alternatives": [
+            {
+              "start_time": 0.03,
+              "alternatives": [
+                {
+                  "confidence": 0.9391,
+                  "word": "one"
+                }
+              ],
+              "end_time": 0.24
+            },
+            {
+              "start_time": 0.24,
+              "alternatives": [
+                {
+                  "confidence": 0.9322,
+                  "word": "voice"
+                }
+              ],
+              "end_time": 0.67
+            },
+            {
+              "start_time": 0.67,
+              "alternatives": [
+                {
+                  "confidence": 0.993,
+                  "word": "we"
+                }
+              ],
+              "end_time": 0.92
+            },
+            {
+              "start_time": 0.92,
+              "alternatives": [
+                {
+                  "confidence": 0.9634,
+                  "word": "will"
+                }
+              ],
+              "end_time": 1.25
+            },
+            {
+              "start_time": 1.25,
+              "alternatives": [
+                {
+                  "confidence": 0.9634,
+                  "word": "not"
+                }
+              ],
+              "end_time": 1.54
+            },
+            {
+              "start_time": 1.54,
+              "alternatives": [
+                {
+                  "confidence": 0.9701,
+                  "word": "go"
+                }
+              ],
+              "end_time": 1.75
+            },
+            {
+              "start_time": 1.75,
+              "alternatives": [
+                {
+                  "confidence": 0.9701,
+                  "word": "quietly"
+                }
+              ],
+              "end_time": 2.44
+            },
+            {
+              "start_time": 2.44,
+              "alternatives": [
+                {
+                  "confidence": 1.0,
+                  "word": "into"
+                }
+              ],
+              "end_time": 2.67
+            },
+            {
+              "start_time": 2.67,
+              "alternatives": [
+                {
+                  "confidence": 1.0,
+                  "word": "the"
+                }
+              ],
+              "end_time": 2.79
+            },
+            {
+              "start_time": 2.79,
+              "alternatives": [
+                {
+                  "confidence": 0.9742,
+                  "word": "night"
+                }
+              ],
+              "end_time": 3.29
+            }
+          ],
+          "keywords_result": {},
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "one",
+                  0.03,
+                  0.24
+                ],
+                [
+                  "voice",
+                  0.24,
+                  0.67
+                ],
+                [
+                  "we",
+                  0.67,
+                  0.92
+                ],
+                [
+                  "will",
+                  0.92,
+                  1.25
+                ],
+                [
+                  "not",
+                  1.25,
+                  1.54
+                ],
+                [
+                  "go",
+                  1.54,
+                  1.75
+                ],
+                [
+                  "quietly",
+                  1.75,
+                  2.44
+                ],
+                [
+                  "into",
+                  2.44,
+                  2.67
+                ],
+                [
+                  "the",
+                  2.67,
+                  2.79
+                ],
+                [
+                  "night",
+                  2.79,
+                  3.29
+                ]
+              ],
+              "confidence": 0.902,
+              "transcript": "one voice we will not go quietly into the night "
+            }
+          ],
+          "final": true
         },
         {
-           "word_alternatives": [
-              {
-                 "start_time": 4.02,
-                 "alternatives": [
-                    {
-                       "confidence": 0.9999,
-                       "word": "we"
-                    }
-                 ],
-                 "end_time": 4.2
-              },
-              {
-                 "start_time": 4.2,
-                 "alternatives": [
-                    {
-                       "confidence": 0.9954,
-                       "word": "will"
-                    }
-                 ],
-                 "end_time": 4.57
-              },
-              {
-                 "start_time": 4.57,
-                 "alternatives": [
-                    {
-                       "confidence": 0.9954,
-                       "word": "not"
-                    }
-                 ],
-                 "end_time": 4.92
-              },
-              {
-                 "start_time": 5.05,
-                 "alternatives": [
-                    {
-                       "confidence": 0.9954,
-                       "word": "vanish"
-                    }
-                 ],
-                 "end_time": 5.81
-              },
-              {
-                 "start_time": 5.84,
-                 "alternatives": [
-                    {
-                       "confidence": 0.9954,
-                       "word": "without"
-                    }
-                 ],
-                 "end_time": 6.18
-              },
-              {
-                 "start_time": 6.18,
-                 "alternatives": [
-                    {
-                       "confidence": 1.0,
-                       "word": "a"
-                    }
-                 ],
-                 "end_time": 6.23
-              },
-              {
-                 "start_time": 6.23,
-                 "alternatives": [
-                    {
-                       "confidence": 0.995,
-                       "word": "fight"
-                    }
-                 ],
-                 "end_time": 6.83
-              }
-           ],
-           "keywords_result": {},
-           "alternatives": [
-              {
-                 "timestamps": [
-                    [
-                       "we",
-                       4.02,
-                       4.2
-                    ],
-                    [
-                       "will",
-                       4.2,
-                       4.57
-                    ],
-                    [
-                       "not",
-                       4.57,
-                       4.92
-                    ],
-                    [
-                       "vanish",
-                       5.05,
-                       5.81
-                    ],
-                    [
-                       "without",
-                       5.84,
-                       6.18
-                    ],
-                    [
-                       "a",
-                       6.18,
-                       6.23
-                    ],
-                    [
-                       "fight",
-                       6.23,
-                       6.83
-                    ]
-                 ],
-                 "confidence": 0.966,
-                 "transcript": "we will not vanish without a fight "
-              }
-           ],
-           "final": true
+          "word_alternatives": [
+            {
+              "start_time": 4.02,
+              "alternatives": [
+                {
+                  "confidence": 0.9999,
+                  "word": "we"
+                }
+              ],
+              "end_time": 4.2
+            },
+            {
+              "start_time": 4.2,
+              "alternatives": [
+                {
+                  "confidence": 0.9954,
+                  "word": "will"
+                }
+              ],
+              "end_time": 4.57
+            },
+            {
+              "start_time": 4.57,
+              "alternatives": [
+                {
+                  "confidence": 0.9954,
+                  "word": "not"
+                }
+              ],
+              "end_time": 4.92
+            },
+            {
+              "start_time": 5.05,
+              "alternatives": [
+                {
+                  "confidence": 0.9954,
+                  "word": "vanish"
+                }
+              ],
+              "end_time": 5.81
+            },
+            {
+              "start_time": 5.84,
+              "alternatives": [
+                {
+                  "confidence": 0.9954,
+                  "word": "without"
+                }
+              ],
+              "end_time": 6.18
+            },
+            {
+              "start_time": 6.18,
+              "alternatives": [
+                {
+                  "confidence": 1.0,
+                  "word": "a"
+                }
+              ],
+              "end_time": 6.23
+            },
+            {
+              "start_time": 6.23,
+              "alternatives": [
+                {
+                  "confidence": 0.995,
+                  "word": "fight"
+                }
+              ],
+              "end_time": 6.83
+            }
+          ],
+          "keywords_result": {},
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "we",
+                  4.02,
+                  4.2
+                ],
+                [
+                  "will",
+                  4.2,
+                  4.57
+                ],
+                [
+                  "not",
+                  4.57,
+                  4.92
+                ],
+                [
+                  "vanish",
+                  5.05,
+                  5.81
+                ],
+                [
+                  "without",
+                  5.84,
+                  6.18
+                ],
+                [
+                  "a",
+                  6.18,
+                  6.23
+                ],
+                [
+                  "fight",
+                  6.23,
+                  6.83
+                ]
+              ],
+              "confidence": 0.966,
+              "transcript": "we will not vanish without a fight "
+            }
+          ],
+          "final": true
         },
         {
-           "word_alternatives": [
-              {
-                 "start_time": 8.21,
-                 "alternatives": [
-                    {
-                       "confidence": 1.0,
-                       "word": "we're"
-                    }
-                 ],
-                 "end_time": 8.36
-              },
-              {
-                 "start_time": 8.36,
-                 "alternatives": [
-                    {
-                       "confidence": 1.0,
-                       "word": "going"
-                    }
-                 ],
-                 "end_time": 8.6
-              },
-              {
-                 "start_time": 8.66,
-                 "alternatives": [
-                    {
-                       "confidence": 0.9587,
-                       "word": "live"
-                    }
-                 ],
-                 "end_time": 8.89
-              }
-           ],
-           "keywords_result": {},
-           "alternatives": [
-              {
-                 "timestamps": [
-                    [
-                       "we're",
-                       8.21,
-                       8.36
-                    ],
-                    [
-                       "going",
-                       8.36,
-                       8.6
-                    ],
-                    [
-                       "to",
-                       8.6,
-                       8.66
-                    ],
-                    [
-                       "live",
-                       8.66,
-                       8.89
-                    ],
-                    [
-                       "on",
-                       8.89,
-                       9.33
-                    ]
-                 ],
-                 "confidence": 0.727,
-                 "transcript": "we're going to live on "
-              }
-           ],
-           "final": true
+          "word_alternatives": [
+            {
+              "start_time": 8.21,
+              "alternatives": [
+                {
+                  "confidence": 1.0,
+                  "word": "we're"
+                }
+              ],
+              "end_time": 8.36
+            },
+            {
+              "start_time": 8.36,
+              "alternatives": [
+                {
+                  "confidence": 1.0,
+                  "word": "going"
+                }
+              ],
+              "end_time": 8.6
+            },
+            {
+              "start_time": 8.66,
+              "alternatives": [
+                {
+                  "confidence": 0.9587,
+                  "word": "live"
+                }
+              ],
+              "end_time": 8.89
+            }
+          ],
+          "keywords_result": {},
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "we're",
+                  8.21,
+                  8.36
+                ],
+                [
+                  "going",
+                  8.36,
+                  8.6
+                ],
+                [
+                  "to",
+                  8.6,
+                  8.66
+                ],
+                [
+                  "live",
+                  8.66,
+                  8.89
+                ],
+                [
+                  "on",
+                  8.89,
+                  9.33
+                ]
+              ],
+              "confidence": 0.727,
+              "transcript": "we're going to live on "
+            }
+          ],
+          "final": true
         },
         {
-           "word_alternatives": [
-              {
-                 "start_time": 10.6,
-                 "alternatives": [
-                    {
-                       "confidence": 1.0,
-                       "word": "we're"
-                    }
-                 ],
-                 "end_time": 10.73
-              },
-              {
-                 "start_time": 10.73,
-                 "alternatives": [
-                    {
-                       "confidence": 1.0,
-                       "word": "going"
-                    }
-                 ],
-                 "end_time": 10.97
-              },
-              {
-                 "start_time": 10.97,
-                 "alternatives": [
-                    {
-                       "confidence": 1.0,
-                       "word": "to"
-                    }
-                 ],
-                 "end_time": 11.05
-              },
-              {
-                 "start_time": 11.05,
-                 "alternatives": [
-                    {
-                       "confidence": 0.995,
-                       "word": "survive"
-                    }
-                 ],
-                 "end_time": 11.88
-              }
-           ],
-           "keywords_result": {},
-           "alternatives": [
-              {
-                 "timestamps": [
-                    [
-                       "we're",
-                       10.6,
-                       10.73
-                    ],
-                    [
-                       "going",
-                       10.73,
-                       10.97
-                    ],
-                    [
-                       "to",
-                       10.97,
-                       11.05
-                    ],
-                    [
-                       "survive",
-                       11.05,
-                       11.88
-                    ]
-                 ],
-                 "confidence": 0.997,
-                 "transcript": "we're going to survive "
-              }
-           ],
-           "final": true
+          "word_alternatives": [
+            {
+              "start_time": 10.6,
+              "alternatives": [
+                {
+                  "confidence": 1.0,
+                  "word": "we're"
+                }
+              ],
+              "end_time": 10.73
+            },
+            {
+              "start_time": 10.73,
+              "alternatives": [
+                {
+                  "confidence": 1.0,
+                  "word": "going"
+                }
+              ],
+              "end_time": 10.97
+            },
+            {
+              "start_time": 10.97,
+              "alternatives": [
+                {
+                  "confidence": 1.0,
+                  "word": "to"
+                }
+              ],
+              "end_time": 11.05
+            },
+            {
+              "start_time": 11.05,
+              "alternatives": [
+                {
+                  "confidence": 0.995,
+                  "word": "survive"
+                }
+              ],
+              "end_time": 11.88
+            }
+          ],
+          "keywords_result": {},
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "we're",
+                  10.6,
+                  10.73
+                ],
+                [
+                  "going",
+                  10.73,
+                  10.97
+                ],
+                [
+                  "to",
+                  10.97,
+                  11.05
+                ],
+                [
+                  "survive",
+                  11.05,
+                  11.88
+                ]
+              ],
+              "confidence": 0.997,
+              "transcript": "we're going to survive "
+            }
+          ],
+          "final": true
         },
         {
-           "word_alternatives": [
-              {
-                 "start_time": 13.39,
-                 "alternatives": [
-                    {
-                       "confidence": 1.0,
-                       "word": "today"
-                    }
-                 ],
-                 "end_time": 14.07
-              },
-              {
-                 "start_time": 14.41,
-                 "alternatives": [
-                    {
-                       "confidence": 1.0,
-                       "word": "we"
-                    }
-                 ],
-                 "end_time": 14.62
-              },
-              {
-                 "start_time": 14.62,
-                 "alternatives": [
-                    {
-                       "confidence": 1.0,
-                       "word": "celebrate"
-                    }
-                 ],
-                 "end_time": 15.36
-              },
-              {
-                 "start_time": 15.76,
-                 "alternatives": [
-                    {
-                       "confidence": 1.0,
-                       "word": "our"
-                    }
-                 ],
-                 "end_time": 16.14
-              },
-              {
-                 "start_time": 16.14,
-                 "alternatives": [
-                    {
-                       "confidence": 1.0,
-                       "word": "independence"
-                    }
-                 ],
-                 "end_time": 17.02
-              },
-              {
-                 "start_time": 17.02,
-                 "alternatives": [
-                    {
-                       "confidence": 0.9973,
-                       "word": "day"
-                    }
-                 ],
-                 "end_time": 17.34
-              }
-           ],
-           "keywords_result": {},
-           "alternatives": [
-              {
-                 "timestamps": [
-                    [
-                       "today",
-                       13.39,
-                       14.07
-                    ],
-                    [
-                       "we",
-                       14.41,
-                       14.62
-                    ],
-                    [
-                       "celebrate",
-                       14.62,
-                       15.36
-                    ],
-                    [
-                       "our",
-                       15.76,
-                       16.14
-                    ],
-                    [
-                       "independence",
-                       16.14,
-                       17.02
-                    ],
-                    [
-                       "day",
-                       17.02,
-                       17.34
-                    ]
-                 ],
-                 "confidence": 0.999,
-                 "transcript": "today we celebrate our independence day "
-              }
-           ],
-           "final": true
+          "word_alternatives": [
+            {
+              "start_time": 13.39,
+              "alternatives": [
+                {
+                  "confidence": 1.0,
+                  "word": "today"
+                }
+              ],
+              "end_time": 14.07
+            },
+            {
+              "start_time": 14.41,
+              "alternatives": [
+                {
+                  "confidence": 1.0,
+                  "word": "we"
+                }
+              ],
+              "end_time": 14.62
+            },
+            {
+              "start_time": 14.62,
+              "alternatives": [
+                {
+                  "confidence": 1.0,
+                  "word": "celebrate"
+                }
+              ],
+              "end_time": 15.36
+            },
+            {
+              "start_time": 15.76,
+              "alternatives": [
+                {
+                  "confidence": 1.0,
+                  "word": "our"
+                }
+              ],
+              "end_time": 16.14
+            },
+            {
+              "start_time": 16.14,
+              "alternatives": [
+                {
+                  "confidence": 1.0,
+                  "word": "independence"
+                }
+              ],
+              "end_time": 17.02
+            },
+            {
+              "start_time": 17.02,
+              "alternatives": [
+                {
+                  "confidence": 0.9973,
+                  "word": "day"
+                }
+              ],
+              "end_time": 17.34
+            }
+          ],
+          "keywords_result": {},
+          "alternatives": [
+            {
+              "timestamps": [
+                [
+                  "today",
+                  13.39,
+                  14.07
+                ],
+                [
+                  "we",
+                  14.41,
+                  14.62
+                ],
+                [
+                  "celebrate",
+                  14.62,
+                  15.36
+                ],
+                [
+                  "our",
+                  15.76,
+                  16.14
+                ],
+                [
+                  "independence",
+                  16.14,
+                  17.02
+                ],
+                [
+                  "day",
+                  17.02,
+                  17.34
+                ]
+              ],
+              "confidence": 0.999,
+              "transcript": "today we celebrate our independence day "
+            }
+          ],
+          "final": true
         }
-     ],
-     "result_index": 0
+      ],
+      "result_index": 0
     }
-  ],
-  "notes": [
-    {"pitch": 0.44709876954086186},
-    {"startTime": 0.0046485260770975055},
-    {"volume": 0.18858809769153595}
   ]
 }

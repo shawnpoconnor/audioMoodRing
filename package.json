@@ -1,0 +1,14 @@
+{
+  "name": "audioMoodRing",
+  "version": "0.0.1",
+  "scripts": {
+    "start": "concurrently -p \"[{name}]\" -n \"SERVER,CLIENT\" -c \"bgMagenta.bold,bgGreen.bold\" \"yarn run start:server\" \"yarn run start:client\"",
+    "start:server": "cd server && sls offline -P 3001",
+    "start:client": "cd client && yarn start",
+    "preinstall": "cd client && yarn",
+    "postinstall": "cd server && yarn"
+  },
+  "dependencies": {
+    "concurrently": "^3.5.1"
+  }
+}
