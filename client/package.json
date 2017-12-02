@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "netlify-cli": "^1.2.2",
     "react-scripts": "^1.0.7",
     "redux-devtools-extension": "^2.13.2",
     "redux-logger": "^3.0.6"
@@ -26,6 +27,8 @@
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
+    "predeploy": "yarn build",
+    "deploy": "netlify deploy --path build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   }

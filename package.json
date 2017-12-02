@@ -3,6 +3,8 @@
   "version": "0.0.1",
   "scripts": {
     "start": "concurrently -p \"[{name}]\" -n \"SERVER,CLIENT\" -c \"bgMagenta.bold,bgGreen.bold\" \"yarn run start:server\" \"yarn run start:client\"",
+    "deploy:client": "cd client && yarn deploy",
+    "deploy:server": "cd server && sls deploy",
     "start:server": "cd server && sls offline -P 3001",
     "start:client": "cd client && yarn start",
     "preinstall": "cd client && yarn",
