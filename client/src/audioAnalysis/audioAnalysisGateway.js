@@ -1,6 +1,6 @@
 import request from 'superagent';
 
-const URL = 'https://api.sonicAPI.com/analyze/melody';
+const URL = 'https://git.heroku.com/audio-moodring-api-interface.git/notes';
 const MAX_MIDI = 127;
 
 export const analyzeFile = file =>
