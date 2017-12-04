@@ -20,7 +20,7 @@ functions:
     events:
       - http:
           path: mood
-          method: get
+          method: post
           cors: true
 
 plugins:
