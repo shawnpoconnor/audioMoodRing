@@ -8,23 +8,13 @@ const MAX_MIDI = 127;
 
 export const analyzeFile = file =>
   new Promise((resolve, reject) =>
-    request.get(URL)
+    request
+      .post(URL)
+      .attach('file', new File(file, 'input.wav'))
       .end((error, response) =>
         error
           ? reject(error)
-          : resolve(toNotes(response.body))
-      ));
-// new Promise((resolve, reject) =>
-//   request
-//     .post(URL)
-//     .field('detailed_result', true)
-//     .field('access_id', process.env.REACT_APP_SONIC_API)
-//     .field('format', 'json')
-//     .attach('input_file', new File(file, 'input.wav'))
-//     .end((error, response) =>
-//       error
-//         ? reject(error)
-//         : resolve(toNotes(response.body))));
+          : resolve({})));
 
 const toNotes = ({melody}) =>
   melody.melody_result.pitch_curve.map(note => ({
