@@ -10,4 +10,5 @@ export const analyzeFile = file =>
       .end((error, response) =>
         error
           ? reject(error)
-          : resolve(response)));
+          : resolve(response))
+  );
