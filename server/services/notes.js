@@ -52,10 +52,12 @@ const toNotes = response => {
   const minVolume = minNotesProperty('volume')(notes);
 
   return {
-    maxPitch,
-    minPitch,
-    maxVolume,
-    minVolume,
+    meta: {
+      maxPitch,
+      minPitch,
+      maxVolume,
+      minVolume,
+    },
     notes,
   };
 };

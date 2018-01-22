@@ -1,10 +1,26 @@
+const R = require('ramda');
 
-const a = () => {
+const a = (words, {notes, meta}) => {
 
+  const wordDetails = R.map(word => {
+    const startNote = R.findLast(note => (
+      note.startTime <= word.startTime
+    ), notes);
+    return {
+      endTime: word.endTime,
+      pitch: startNote.pitch,
+      volume: startNote.volume,
+      word: word.word,
+    };
+  })(words, notes);
+
+  return {
+    words: wordDetails,
+    meta,
+  };
 };
 
 module.exports = {a};
-
 
 /*
 * {
@@ -23,4 +39,4 @@ module.exports = {a};
 *     maxVolume: 0,
 *   }
 * }
-* */
+*/
