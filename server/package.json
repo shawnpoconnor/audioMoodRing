@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "nodemon ./bin/www"
+    "start": "nodemon ./app"
   },
   "license": "Brad and Shawns good license dont use",
   "dependencies": {
