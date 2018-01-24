@@ -2,20 +2,20 @@ import {analyzeFile} from './audioAnalysis/audioAnalysisGateway';
 
 const uploadFile = file => dispatch => {
   dispatch({
-    type: 'notes/LOAD',
+    type: 'words/LOAD',
     payload: false,
   });
 
   analyzeFile(file)
-  .then(notes =>
+  .then(words =>
     dispatch({
-      type: 'notes/UPDATE',
-      payload: notes,
+      type: 'words/UPDATE',
+      payload: words,
     })
   )
   .catch(error =>
     dispatch({
-      type: 'notes/ERROR',
+      type: 'words/ERROR',
       payload: error,
     })
   );
