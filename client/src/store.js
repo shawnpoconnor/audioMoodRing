@@ -20,7 +20,7 @@ if (process.env.NODE_ENV === 'production') {
 else {
     const {composeWithDevTools} = require('redux-devtools-extension');
     const logger = require('redux-logger').default;
-    
+
     enhancer = composeWithDevTools(
         applyMiddleware(
             ...baseMiddleware,
