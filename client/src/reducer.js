@@ -19,7 +19,7 @@ const audioReducer = (state = defaultState, action) => {
         isLoading: false,
         isErrored: false,
         words: action.payload.words,
-        metadata: action.payload.metadata,
+        metadata: action.payload.meta,
       }
     case 'words/ERROR':
       return {
