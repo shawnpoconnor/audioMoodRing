@@ -15,17 +15,17 @@ const audioReducer = (state = defaultState, action) => {
       }
     case 'words/UPDATE':
       return {
-        ...state,
+        hasAnalyzed: true,
         isLoading: false,
-        isErrored: false,
-        words: action.payload.words,
         metadata: action.payload.meta,
+        words: action.payload.words,
       }
-    case 'words/ERROR':
+    case 'words/RESET':
       return {
-        ...state,
+        hasAnalyzed: false,
         isLoading: false,
-        isErrored: true,
+        metadata: {},
+        words: [],
       }
     default:
       return state

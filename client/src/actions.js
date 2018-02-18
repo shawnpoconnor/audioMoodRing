@@ -1,6 +1,6 @@
-import { analyzeFile } from './audioAnalysis/audioAnalysisGateway'
+import { analyzeFile } from './api'
 
-const uploadFile = file => dispatch => {
+export const uploadFile = file => dispatch => {
   dispatch({
     type: 'words/LOAD',
   })
@@ -20,6 +20,6 @@ const uploadFile = file => dispatch => {
     )
 }
 
-export {
-  uploadFile,
-}
+export const resetAnalysis = () => ({
+  type: 'words/RESET'
+})
