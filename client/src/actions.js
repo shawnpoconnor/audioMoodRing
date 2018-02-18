@@ -3,7 +3,6 @@ import {analyzeFile} from './audioAnalysis/audioAnalysisGateway';
 const uploadFile = file => dispatch => {
   dispatch({
     type: 'words/LOAD',
-    payload: false,
   });
 
   analyzeFile(file)
