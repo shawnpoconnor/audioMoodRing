@@ -1,36 +1,24 @@
-import {createStore, applyMiddleware} from 'redux';
-import axios from 'axios';
-import axiosMiddleware from 'redux-axios-middleware';
-import thunk from 'redux-thunk';
-import reducer from './reducer';
+import { applyMiddleware, createStore } from 'redux'
+import axios from 'axios'
+import axiosMiddleware from 'redux-axios-middleware'
+import { composeWithDevTools } from 'redux-devtools-extension'
+import thunk from 'redux-thunk'
+import reducer from './reducer'
 
-const initialState = {};
+const initialState = {}
 const client = axios.create({
-  responseType: 'json'
-});
+  responseType: 'json',
+})
 
-const baseMiddleware = [thunk, axiosMiddleware(client)];
-
-let enhancer;
-
-if (process.env.NODE_ENV === 'production') {
-    enhancer = applyMiddleware(...baseMiddleware)
-}
-
-else {
-    const {composeWithDevTools} = require('redux-devtools-extension');
-    const logger = require('redux-logger').default;
-
-    enhancer = composeWithDevTools(
-        applyMiddleware(
-            ...baseMiddleware,
-            logger
-        )
-    );
-}
+const enhancer = composeWithDevTools(
+  applyMiddleware(
+    thunk,
+    axiosMiddleware(client),
+  ),
+)
 
 export default createStore(
-    reducer,
-    initialState,
-    enhancer,
-);
+  reducer,
+  initialState,
+  enhancer,
+)
