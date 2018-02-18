@@ -1,6 +1,6 @@
 import React from 'react'
 
-const Transcription = props => console.log(props) || (
+const Transcription = props => (
   <ul>
     {props.words.map((word, i) =>
       <li key={i}>
