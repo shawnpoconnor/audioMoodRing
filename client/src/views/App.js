@@ -1,28 +1,24 @@
-import React from 'react';
-import styled from 'styled-components';
-import {connect} from 'react-redux';
+import React from 'react'
+import { connect } from 'react-redux'
+import { uploadFile } from '../actions'
+import { getAllWords, getMetadata, getShouldShowFileUpload } from '../selectors'
+import Header from './Header'
+import FileUpload from './FileUpload'
+import Transcription from './Transcription'
 
-import {uploadFile} from '../actions';
-import {getShouldShowFileUpload, getAllWords} from '../selectors';
-import Header from './Header';
-import FileUpload from './FileUpload';
-import Transcription from './Transcription';
-
-const App = props =>
-  <Main>
+const App = props => (
+  <React.Fragment>
     <Header />
     <FileUpload onDrop={props.uploadFile} shouldShowFileUpload={props.shouldShowFileUpload} />
     <Transcription words={props.words} />
-  </Main>;
-
-const Main = styled.div``;
+  </React.Fragment>
+)
 
 export default connect(
   state => ({
     shouldShowFileUpload: getShouldShowFileUpload(state),
     words: getAllWords(state),
+    metadata: getMetadata(state),
   }),
-  {
-    uploadFile
-  }
-)(App);
+  {uploadFile},
+)(App)
